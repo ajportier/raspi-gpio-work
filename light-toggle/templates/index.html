@@ -1,0 +1,16 @@
+<!doctype html>
+<head>
+</head>
+<body>
+<h1>Toggle Light</h1>
+<form action="/" method="POST">
+{% if state == 'on' %}
+<input type="radio" name="state" value="on" checked>On<br>
+<input type="radio" name="state" value="off">Off<br>
+{% else %}
+<input type="radio" name="state" value="on">On<br>
+<input type="radio" name="state" value="off" checked>Off<br>
+{% endif %}
+<input type="submit" value=Submit>
+</form>
+</body>
