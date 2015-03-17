@@ -16,9 +16,9 @@ def offLED(pin):
     GPIO.output(pin, False)
 
 if __name__ == '__main__':
+    settings = {'state':'off'}
     try:
         while True:
-            settings = {}
 
             try:
                 settings = pickle.load(open(SETTINGS_P, 'rb'))
